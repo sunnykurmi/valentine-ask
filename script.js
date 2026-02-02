@@ -53,8 +53,7 @@ noBtn.addEventListener("mouseover", () => {
   noBtn.style.transition = "transform 0.25s ease";
   noBtn.style.transform = `translate(${moveX}px, ${moveY}px)`;
 });
-
-noBtn.addEventListener("mousemove", () => {
+noBtn.addEventListener("mouseenter", () => {
   const rect = noBtn.getBoundingClientRect();
 
   const padding = 20;
@@ -112,9 +111,9 @@ noBtn.addEventListener("mousemove", () => {
 // YES is clicked
 
 yesBtn.addEventListener("click", () => {
-    title.textContent = "Yippeeee!";
+    title.textContent = "";
 
-    catImg.src = "cat_dance.gif";
+    catImg.src = "/valentines-day.gif";
 
     document.querySelector(".letter-window").classList.add("final");
 
